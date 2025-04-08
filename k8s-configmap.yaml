@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  DB_NAME: "spring_boot_db"
+  MYSQL_HOST: "mysql-service"
