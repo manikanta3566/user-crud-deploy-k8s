@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: user-service:2  # Replace with your actual image
+          image: user-service:6  # Replace with your actual image
           ports:
             - containerPort: 8080
           env:
