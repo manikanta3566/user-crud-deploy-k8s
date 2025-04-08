@@ -3,12 +3,14 @@ package com.project.user_crud.service;
 import com.project.user_crud.entity.User;
 import com.project.user_crud.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Log4j2
 public class UserService {
 
     private final UserRepository userRepository;
@@ -22,6 +24,7 @@ public class UserService {
     }
 
     public List<User> getAllUsers(){
+        log.info("inside getAllUsers()");
         return userRepository.findAll();
     }
 
